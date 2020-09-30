@@ -1,0 +1,247 @@
+@import 'variables.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{ 
+    .login{
+
+        div{
+            .form{
+                &:hover{
+                    background-color:white ;
+                }
+               .triangle{
+                   z-index: 0!important;
+                   transform: rotate(45deg);
+                   width: 5px;
+                   height: 10px;
+                   background: white;
+                   position: absolute;
+                   top: -1px;
+                   left: 40%;
+                   border-radius: 0 0 25px 0;
+                   
+               }
+                z-index: 2;
+                top: 36px;
+                left: -80px;
+                padding: 10px;
+                width: 200px;
+                background-color: white;
+                position: absolute;
+            }
+            position: relative;
+            transition: 0.5s ease;
+            &:hover{
+                background-color:$bgcolordark ;
+            }
+            border-radius: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            margin-left: 15px;
+        }
+    }
+    .time{
+        div.active{
+            border-bottom: 2px solid white;
+        }
+        div{
+            border-radius: 10px; 
+            font-size: .8rem;
+            padding: 10px 15px;
+            transition: 0.5s ease;
+            &:hover{
+                background-color:$bgcolordark ;
+            }
+            cursor: pointer;
+        }
+    }
+    .logo{
+        span{
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        img{
+             margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    color: white;
+    background:$bgcolor;
+}
+@media only screen and (max-width: 1200px){
+    header{
+        .time{
+            display: none!important;
+        }
+    }
+}
+
+#slider{
+    background: $bgcolorgray;
+    .carousel-item{
+        position: relative;
+        .city-name{
+            h3{
+                font-size: 2.5rem;
+                margin-right: 20px;
+            }
+            span{
+                font-size: 2.5rem;
+            }
+            color: white;
+            display: flex;
+            align-items: baseline;
+            position: absolute;
+            top: 4%;
+            left: 4%;
+        }
+        img{
+            height: 500px;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    #slider{
+        .carousel-item{
+            img{
+                height: 300px;
+            }
+        }
+    }
+}
+
+#cities{
+    background: $bgcolorgray;
+    span.heading{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+    .col-12{
+        .item{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 345px;
+            cursor: pointer;
+            &:hover{
+
+            }
+            box-shadow: 0px 0px 8px 0px gray;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            .details{
+                .city-name{
+                    box-shadow: 0px 15px 12px 0px #c3d7fc;
+                    background: #5D94F8;
+                    padding: 10px 25px;
+                    color: white;
+                    width: 190px;
+                    border-radius: 30px;
+                }
+                padding-top: 20px ;
+                text-align: center;
+                .temp{
+                    img{
+                        margin-right: 10px;
+                    }
+                    span{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        .city-img{
+            img{
+                height: 161px;
+                border-radius: 10px 10px 0 0;
+                width: 100%;
+            }
+            width: 100%;
+        }
+    }
+        }
+}
+
+@media only screen and (max-width: 1200px){
+    #cities{
+        .col-12{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+footer{
+    
+    .col-6{
+        ul{
+            li{
+                margin-top: 15px;
+            }
+            font-size: 0.8rem;
+            color: white;
+            list-style: none;
+        }
+    }
+    .line{
+        margin-top: 20px;
+        width: 100%;
+        background: $bgcolor;
+        height: 1px;
+    }
+    .social{
+        div{
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 5px 13px;
+            font-size: 1.2rem;
+            background: #5D94F8;
+            color: white;
+            margin-right: 15px;
+        }
+    }
+    background: #3265C3;
+    .logo{
+        color: white;
+        span{
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        img{
+             margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.footer-bottom{
+    span{
+        font-size: 0.8rem;
+    }
+    .subcr{
+        input{
+            border-radius: 50px 0 0 50px;
+            padding: 10px 30px;
+            text-align: center;
+            width: 60%;
+        }
+        button{
+            border-radius: 0 50px 50px 0;
+            padding: 10px 30px;
+            color: white;
+            border: none;
+            background: #3265C3;
+            width: 40%;
+        }
+        width: 400px;
+    }
+    color: white;
+    background: #2857AE;
+}
